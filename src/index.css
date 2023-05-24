@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+.app-header {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center;
+  background-color: grey;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading-text {
+  color: white;
+  font-size: 42px;
+  font-weight: bolder;
+  text-align: center;
+  margin: 50px;
+}
+
+.square {
+  min-width: 100px;
+  min-height: 100px;
+  font-size: 64px;
+  text-align: center;
+  color: #BF40BF;
+  font-weight: bolder;
+  padding: 30px;
+}
+
+.fc-x {
+  color: #800020;
+}
+
+.fc-o {
+  color: #E0B0FF;
+}
+
+.fw-600 {
+  font-weight: bolder;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.b-bottom-right {
+  border-right: 15px solid #BF40BF;
+  border-bottom: 15px solid #BF40BF;
+}
+
+.b-bottom {
+  border-bottom: 15px solid #BF40BF;
+}
+
+.b-right {
+  border-right: 15px solid #BF40BF;
+}
+
+.clear-button {
+  width: max-content;
+  margin: 3rem auto 3rem auto;
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(#e66465, #9198e5);
+  color: white;
+}
+
+.clear-button:hover{
+  transform: scale(1.1);
+  transition: ease-in-out .3s;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .heading-text {
+      color: white;
+      font-size: 30px;
+      font-weight: bolder;
+      text-align: center;
+      margin: 60px 10px;
+  }
+
+  .square {
+      min-width: 80px;
+      min-height: 80px;
+      font-size: 32px;
+      font-weight: bolder;
+      padding: 0.7rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .b-bottom-right {
+      border-right: 0.5rem solid #BF40BF;
+      border-bottom: 0.5rem solid #BF40BF;
+  }
+
+  .b-bottom {
+      border-bottom: 0.5rem solid #BF40BF;
+  }
+
+  .b-right {
+      border-right: 0.5rem solid #BF40BF;
+  }
+
+  .clear-button {
+      width: max-content;
+      margin: 3rem auto 0.5rem auto;
+      background: linear-gradient(#e66465, #9198e5);
+      color: white;
+  }
+
+  .clear-button:hover{
+    transform: scale(1.1);
+    transition: ease-in-out .3s;
+  }
+}
