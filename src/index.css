@@ -94,6 +94,11 @@ code {
   transition: ease-in-out .3s;
 }
 
+.clear-button:active{
+  transform: scale(.9);
+  transition: ease-in-out .3s;
+}
+
 
 @media only screen and (max-width: 600px) {
   .heading-text {
@@ -137,6 +142,11 @@ code {
 
   .clear-button:hover{
     transform: scale(1.1);
+    transition: ease-in-out .3s;
+  }
+
+  .clear-button:active{
+    transform: scale(.9);
     transition: ease-in-out .3s;
   }
 }

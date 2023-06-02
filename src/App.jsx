@@ -4,9 +4,9 @@ import SquareComponent from "./components/SquareComponent";
 /* empty board */
 const initialBoard = ["", "", "", "", "", "", "", "", "", ""];
 
-function App() {
+const App = () => {
 
-    /* useState */
+    /* useStates */
     const [gameState, setGameState] = useState(initialBoard) //initialises the board as empty
     const [playerX, setPlayerX] = useState(false) // 0 starts the game
 
@@ -29,8 +29,12 @@ function App() {
     useEffect(() => {
         let winner = checkWinner();
         if (winner) {
-            clearGame();
-            alert(`${winner} is the winner!`)
+            //alert(`${winner} is the winner!`)
+            //clearGame();
+            setTimeout(() => {
+                alert(`${winner} is the winner!`)
+            },100)
+            
         } 
     }, [gameState])
 
@@ -48,6 +52,7 @@ function App() {
             [2, 4, 6],
         ];
 
+        /* Iterates through the winners array (lines) and if the first and the second adn the third is the same in a possible winning line, then return the winner */
         for (let i = 0; i < lines.length; i++) {
             const [a, b, c] = lines[i];
             if (gameState[a] && gameState[a] === gameState[b] && gameState[a] === gameState[c]) {
